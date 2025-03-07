@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Konecta.API", "Konecta.API\Konecta.API.csproj", "{1DD2F100-9903-4AA4-B984-D6E09A1BC869}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Konecta.Data", "Konecta.Data\Konecta.Data.csproj", "{6738B13C-A221-42AC-8CE2-954F04AE44CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Konecta.Service", "Konecta.Service\Konecta.Service.csproj", "{D7C4F1D3-1B2C-4079-807C-037EDF6A33D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Konecta.Core", "Konecta.Core\Konecta.Core.csproj", "{3C869D95-C5DF-48A7-AD9B-6A5B2809AA86}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DD2F100-9903-4AA4-B984-D6E09A1BC869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DD2F100-9903-4AA4-B984-D6E09A1BC869}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DD2F100-9903-4AA4-B984-D6E09A1BC869}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DD2F100-9903-4AA4-B984-D6E09A1BC869}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6738B13C-A221-42AC-8CE2-954F04AE44CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6738B13C-A221-42AC-8CE2-954F04AE44CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6738B13C-A221-42AC-8CE2-954F04AE44CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6738B13C-A221-42AC-8CE2-954F04AE44CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7C4F1D3-1B2C-4079-807C-037EDF6A33D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7C4F1D3-1B2C-4079-807C-037EDF6A33D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7C4F1D3-1B2C-4079-807C-037EDF6A33D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7C4F1D3-1B2C-4079-807C-037EDF6A33D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C869D95-C5DF-48A7-AD9B-6A5B2809AA86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C869D95-C5DF-48A7-AD9B-6A5B2809AA86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C869D95-C5DF-48A7-AD9B-6A5B2809AA86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C869D95-C5DF-48A7-AD9B-6A5B2809AA86}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {10EAD272-B3DD-4E5C-A574-C9275A24776B}
+	EndGlobalSection
+EndGlobal
