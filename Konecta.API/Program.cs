@@ -8,7 +8,6 @@ using Microsoft.OpenApi.Models;
 using System.Text;
 using Konecta.API.Services;
 
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add Controllers
@@ -49,7 +48,6 @@ builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddHostedService<HttpDataWriterService>();
 builder.Services.AddHttpClient(); // Required for HttpClient in the service
 
-
 // JWT Authentication
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
@@ -68,17 +66,28 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 builder.Services.AddAuthorization();
 
+// ? CORS (to fix fetch error)
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
+
 var app = builder.Build();
 
-// Swagger middleware
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-// Enable Authentication/Authorization middleware
+// Middleware Pipeline
 app.UseHttpsRedirection();
+app.UseCors("AllowAll"); // ?? CORS must come before auth
 app.UseAuthentication();
 app.UseAuthorization();
 
